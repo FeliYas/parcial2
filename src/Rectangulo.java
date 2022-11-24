@@ -1,10 +1,19 @@
 public class Rectangulo extends Forma{
-
     private double ancho;
     private double largo;
 
     Rectangulo(String color, boolean relleno, double ancho, double largo) {
         super(color, relleno);
+    }
+
+    @Override
+    public void getArea() {
+
+    }
+
+    @Override
+    public void getPerimetro() {
+
     }
 
     public double getAncho() {

@@ -3,7 +3,7 @@ public abstract class Forma {
     private boolean relleno = true;
 
     Forma(String color, boolean relleno){
-
+        getColor();
     }
 
     public String getColor() {
@@ -22,7 +22,13 @@ public abstract class Forma {
         this.relleno = relleno;
     }
 
-    abstract public void getArea(double)
+    abstract public void getArea();{
+
+    }
+
+    abstract public void getPerimetro();{
+
+    }
 
     @Override
     public String toString() {
