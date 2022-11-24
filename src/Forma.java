@@ -4,6 +4,8 @@ public abstract class Forma {
 
     Forma(String color, boolean relleno){
         getColor();
+        getArea();
+        getPerimetro();
     }
 
     public String getColor() {
