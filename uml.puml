@@ -1,0 +1,46 @@
+@startuml
+class Circulo {
+- double radio
+~ <<Create>> Circulo(String,boolean,double)
++ double getRadio()
++ void setRadio(double)
++ void getArea()
++ void getPerimetro()
++ String toString()
+}
+class Cuadrado {
+~ <<Create>> Cuadrado(String,boolean,double,double)
+}
+abstract class Forma {
+- String color
+- boolean relleno
+~ <<Create>> Forma(String,boolean)
++ String getColor()
++ void setColor(String)
++ boolean isRelleno()
++ void setRelleno(boolean)
++ {abstract}void getArea()
++ {abstract}void getPerimetro()
++ String toString()
+}
+class Rectangulo {
+- double ancho
+- double largo
+~ <<Create>> Rectangulo(String,boolean,double,double)
++ double getAncho()
++ void setAncho(double)
++ double getLargo()
++ void setLargo(double)
++ void getArea()
++ void getPerimetro()
++ String toString()
+}
+class Main {
++ {static} void main(String[])
+}
+
+
+Forma <|-- Circulo
+Rectangulo <|-- Cuadrado
+Forma <|-- Rectangulo
+@enduml

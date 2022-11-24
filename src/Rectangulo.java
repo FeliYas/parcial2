@@ -1,6 +1,6 @@
 public class Rectangulo extends Forma{
-    private double ancho = 1.0;
-    private double largo = 1.0;
+    public double ancho = 1.0;
+    public double largo = 1.0;
 
     Rectangulo(String color, boolean relleno, double ancho, double largo) {
         super(color, relleno);
